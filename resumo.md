@@ -2,6 +2,8 @@
 
 Vídeo de Explicação: www.youtube.com/watch?v=U2DRG_Lez8k
 
+## Principal
+
 O problema se baseia na coleta e análise de dados de um arquivo csv com contratos bancários. Em cases como esse, o Pandas geralmente é a melhor opção, por conta das ferramentas que tem pra lidar com dados, especialmente o DataFrame.
 
 No start-up do programa, o arquivo é lido e transformado em DataFrame para ser analisado. A agregação da tabela é feita de forma a criar um "DataFrame" de mímica, seguindo o formato de dicionário de colunas, cujos valores são as células individuais em cada linha da coluna. No fim da função tabela_agregada(), esses dados são transformados em um DataFrame próprio para ser salvo em seu próprio arquivo.
@@ -12,7 +14,7 @@ Para a análise de faixas de risco, a informação de cada faixa é salva em um 
 
 Finalmente, o dataset final pode ser criado de todos os dados calculados na função tabela_agregada(), e escrito com a função escrever_dataset_final(), acessado pela operação 5. Como foi pedido, esse arquivo foi salvo como `dataset_final.csv`.
 
-[BÔNUS]
+## Bônus
 
 Algumas sugestões de dados que poderiam agregar bem pra um modelo pra prever inadimplência:
 * Cálculo do tempo médio entre cada contrato: se um cliente está abrindo contratos um atrás do outro, pode indicar risco maior, ou no mínimo uma possibilidade de falha correlacionada, caso o cliente tenha vários contratos simultâneos
